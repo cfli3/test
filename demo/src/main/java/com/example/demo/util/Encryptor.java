@@ -50,7 +50,6 @@ public class Encryptor {
 
         byte[] encryptedMessage = cipher.doFinal(message.getBytes("UTF-8"));
         String encodedMessage = Base64.getEncoder().encodeToString(encryptedMessage);
-        //System.out.println("Encoded message: " + encodedMessage);
 
         return encodedMessage;
     }

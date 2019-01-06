@@ -70,7 +70,6 @@ public class UserService {
 
         try {
             decryptedString = encryptor.decryptMessage(encMessage);
-            //System.out.println("Decrypted user message: " + decryptedString);
         } catch (Exception exc) {
             System.out.println("Exception occurred while decrypting message");
             exc.printStackTrace();
